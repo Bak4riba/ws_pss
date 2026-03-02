@@ -1,0 +1,18 @@
+async function carregar() {
+  try {
+    console.log('Iniciando carregamento...');
+    const res = await fetch('dados.json');
+    console.log('Status:', res.status);
+    const data = await res.json();
+    console.log('Dados recebidos:', data.total_registros, 'registros');
+    processar(data);
+  } catch (e) {
+    console.error('Erro:', e);
+    document.getElementById('main').innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">⚠️</div>
+        <h3>Erro ao carregar dados</h3>
+        <p>${e.message}</p>
+      </div>`;
+  }
+}
