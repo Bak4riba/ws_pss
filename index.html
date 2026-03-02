@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Distribuição de Aulas PSS — Telêmaco Borba</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Syne:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg:       #0d0f14;
+      --surface:  #141720;
+      --border:   #1e2330;
+      --accent:   #4fffb0;
+      --accent2:  #ff6b6b;
+      --text:     #e8eaf0;
+      --muted:    #5a6072;
+      --card-bg:  #171b26;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Syne', sans-serif;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* ── Grid background ── */
+    body::before {
+      content: '';
+      position: fixed;
+      inset: 0;
+      background-image:
+        linear-gradient(var(--border) 1px, transparent 1px),
+        linear-gradient(90deg, var(--border) 1px, transparent 1px);
+      background-size: 40px 40px;
+      opacity: 0.4;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    /* ── Header ── */
+    header {
+      position: relative;
+      z-index: 10;
+      padding: 48px 40px 32px;
+      border-bottom: 1px solid var(--border);
+      background: linear-gradient(180deg, #0d0f14 0%, transparent 100%);
+    }
+
+    .header-tag {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--accent);
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    header h1 {
+      font-size: clamp(28px, 5vw, 52px);
+      font-weight: 800;
+      line-height: 1.05;
+      letter-spacing: -1px;
+    }
+
+    header h1 span {
+      color: var(--accent);
+    }
+
+    .header-sub {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-family: 'DM Mono', monospace;
+    }
+
+    /* ── Stats bar ── */
+    .stats-bar {
+      position: relative;
+      z-index: 10;
+      display: flex;
+      gap: 32px;
+      padding: 20px 40px;
+      border-bottom: 1px solid var(--border);
+      flex-wrap: wrap;
+    }
+
+    .stat {
+      display: flex;
+      flex-direction: column;
+      gap: 2px;
+    }
+
+    .stat-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--accent);
+      font-family: 'DM Mono', monospace;
+    }
+
+    .stat-label {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+    }
+
+    .last-update {
+      margin-left: auto;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-family: 'DM Mono', monospace;
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .dot {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--accent);
+      animation: pulse 2s infinite;
+    }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    /* ── Filters ── */
+    .filters {
+      position: relative;
+      z-index: 10;
+      padding: 24px 40px;
+      display: flex;
+      gap: 16px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid var(--border);
+      background: var(--surface);
+    }
+
+    .filter-group {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .filter-label {
+      font-size: 10px;
+      font-family: 'DM Mono', monospace;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    .filter-group input,
+    .filter-group select {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 10px 14px;
+      font-family: 'Syne', sans-serif;
+      font-size: 14px;
+      border-radius: 6px;
+      outline: none;
+      transition: border-color 0.2s;
+      width: 100%;
+    }
+
+    .filter-group input:focus,
+    .filter-group select:focus {
+      border-color: var(--accent);
+    }
+
+    .filter-group select option {
+      background: var(--bg);
+    }
+
+    /* ── Main layout ── */
+    main {
+      position: relative;
+      z-index: 10;
+      padding: 32px 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    /* ── Date group ── */
+    .date-group {
+      margin-bottom: 40px;
+      animation: fadeIn 0.4s ease both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .date-header {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 16px;
+    }
+
+    .date-label {
+      font-family: 'DM Mono', monospace;
+      font-size: 13px;
+      color: var(--accent);
+      background: rgba(79,255,176,0.08);
+      border: 1px solid rgba(79,255,176,0.2);
+      padding: 4px 12px;
+      border-radius: 4px;
+    }
+
+    .date-line {
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    .date-count {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+    }
+
+    /* ── Cards grid ── */
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 16px;
+    }
+
+    /* ── Card ── */
+    .card {
+      background: var(--card-bg);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 20px;
+      transition: border-color 0.2s, transform 0.2s;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--accent), transparent);
+      opacity: 0;
+      transition: opacity 0.2s;
+    }
+
+    .card:hover {
+      border-color: rgba(79,255,176,0.3);
+      transform: translateY(-2px);
+    }
+
+    .card:hover::before {
+      opacity: 1;
+    }
+
+    .card-disciplina {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      margin-bottom: 6px;
+      line-height: 1.3;
+    }
+
+    .card-escola {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 4px;
+      line-height: 1.3;
+    }
+
+    .card-municipio {
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 16px;
+    }
+
+    .card-turnos {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .turno-block {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      padding: 8px 12px;
+      flex: 1;
+      min-width: 80px;
+    }
+
+    .turno-titulo {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 6px;
+    }
+
+    .turno-aulas {
+      display: flex;
+      gap: 6px;
+    }
+
+    .aula-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+    }
+
+    .aula-turno {
+      font-family: 'DM Mono', monospace;
+      font-size: 9px;
+      color: var(--muted);
+    }
+
+    .aula-valor {
+      font-family: 'DM Mono', monospace;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text);
+    }
+
+    .aula-valor.vazio {
+      color: var(--border);
+    }
+
+    .aula-valor.tem-aula {
+      color: var(--accent);
+    }
+
+    .card-obs {
+      margin-top: 12px;
+      font-family: 'DM Mono', monospace;
+      font-size: 11px;
+      color: var(--accent2);
+      background: rgba(255,107,107,0.08);
+      border: 1px solid rgba(255,107,107,0.2);
+      border-radius: 4px;
+      padding: 6px 10px;
+    }
+
+    /* ── Empty state ── */
+    .empty {
+      text-align: center;
+      padding: 80px 40px;
+      color: var(--muted);
+    }
+
+    .empty-icon {
+      font-size: 48px;
+      margin-bottom: 16px;
+    }
+
+    .empty h3 {
+      font-size: 18px;
+      margin-bottom: 8px;
+      color: var(--text);
+    }
+
+    .empty p {
+      font-size: 14px;
+      font-family: 'DM Mono', monospace;
+    }
+
+    /* ── Loading ── */
+    .loading {
+      text-align: center;
+      padding: 80px;
+      color: var(--muted);
+      font-family: 'DM Mono', monospace;
+      font-size: 14px;
+    }
+
+    .loading::after {
+      content: '';
+      display: block;
+      width: 32px;
+      height: 32px;
+      border: 2px solid var(--border);
+      border-top-color: var(--accent);
+      border-radius: 50%;
+      margin: 16px auto 0;
+      animation: spin 0.8s linear infinite;
+    }
+
+    @keyframes spin {
+      to { transform: rotate(360deg); }
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 600px) {
+      header, .stats-bar, .filters, main { padding-left: 20px; padding-right: 20px; }
+      .stats-bar { gap: 20px; }
+      .last-update { margin-left: 0; width: 100%; }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="header-tag">NRE Telêmaco Borba — PSS 2026</div>
+  <h1>Distribuição<br/>de <span>Aulas</span></h1>
+  <div class="header-sub">// Atualizado automaticamente com os PDFs mais recentes</div>
+</header>
+
+<div class="stats-bar" id="statsBar">
+  <div class="stat">
+    <span class="stat-value" id="statPdfs">—</span>
+    <span class="stat-label">PDFs carregados</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value" id="statRegistros">—</span>
+    <span class="stat-label">Registros encontrados</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value" id="statDisciplinas">—</span>
+    <span class="stat-label">Disciplinas</span>
+  </div>
+  <div class="stat">
+    <span class="stat-value" id="statEscolas">—</span>
+    <span class="stat-label">Escolas</span>
+  </div>
+  <div class="last-update">
+    <span class="dot"></span>
+    <span id="lastUpdate">carregando...</span>
+  </div>
+</div>
+
+<div class="filters">
+  <div class="filter-group">
+    <span class="filter-label">Buscar disciplina</span>
+    <input type="text" id="filtroDisc" placeholder="ex: Matemática, Inglês..." />
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Escola</span>
+    <input type="text" id="filtroEscola" placeholder="ex: Gregório Teixeira..." />
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Município</span>
+    <select id="filtroMunicipio">
+      <option value="">Todos os municípios</option>
+    </select>
+  </div>
+  <div class="filter-group">
+    <span class="filter-label">Nível de Ensino</span>
+    <select id="filtroNivel">
+      <option value="">Todos os níveis</option>
+      <option value="fundamental">Ensino Fundamental</option>
+      <option value="medio">Ensino Médio</option>
+    </select>
+  </div>
+</div>
+
+<main id="main">
+  <div class="loading">Carregando dados...</div>
+</main>
+
+<script>
+  let todosRegistros = [];
+
+  // ── Carrega o JSON ──────────────────────────────────────────────
+async function carregar() {
+  try {
+    console.log('Iniciando carregamento...');
+    const res = await fetch('dados.json');
+    console.log('Status:', res.status);
+    const data = await res.json();
+    console.log('Dados recebidos:', data.total_registros, 'registros');
+    processar(data);
+  } catch (e) {
+    console.error('Erro:', e);
+    document.getElementById('main').innerHTML = `
+      <div class="empty">
+        <div class="empty-icon">⚠️</div>
+        <h3>Erro ao carregar dados</h3>
+        <p>${e.message}</p>
+      </div>`;
+  }
+}
+
+  // ── Processa os dados vindos do JSON ────────────────────────────
+  function processar(data) {
+    // Achata todos os registros adicionando a data do PDF pai
+    todosRegistros = [];
+    for (const pdf of data.pdfs) {
+      for (const reg of pdf.distribuicao) {
+        todosRegistros.push({ ...reg, data_pdf: pdf.data });
+      }
+    }
+
+    // Stats
+    document.getElementById('statPdfs').textContent = data.total_pdfs;
+    document.getElementById('statRegistros').textContent = data.total_registros;
+    document.getElementById('statDisciplinas').textContent =
+      new Set(todosRegistros.map(r => r.disciplina)).size;
+    document.getElementById('statEscolas').textContent =
+      new Set(todosRegistros.map(r => r.escola)).size;
+    document.getElementById('lastUpdate').textContent =
+      `Atualizado em ${new Date().toLocaleDateString('pt-BR')}`;
+
+    // Popula filtro de municípios
+    const municipios = [...new Set(todosRegistros.map(r => r.municipio).filter(Boolean))].sort();
+    const sel = document.getElementById('filtroMunicipio');
+    municipios.forEach(m => {
+      const opt = document.createElement('option');
+      opt.value = m;
+      opt.textContent = m;
+      sel.appendChild(opt);
+    });
+
+    renderizar();
+  }
+
+  // ── Renderiza os cards filtrados ────────────────────────────────
+  function renderizar() {
+    const disc    = document.getElementById('filtroDisc').value.toLowerCase();
+    const escola  = document.getElementById('filtroEscola').value.toLowerCase();
+    const mun     = document.getElementById('filtroMunicipio').value;
+    const nivel   = document.getElementById('filtroNivel').value;
+
+    let filtrados = todosRegistros.filter(r => {
+      if (disc   && !r.disciplina?.toLowerCase().includes(disc))   return false;
+      if (escola && !r.escola?.toLowerCase().includes(escola))     return false;
+      if (mun    && r.municipio !== mun)                           return false;
+      if (nivel === 'fundamental') {
+        const f = r.ensino_fundamental;
+        if (!f.M && !f.T && !f.N) return false;
+      }
+      if (nivel === 'medio') {
+        const m = r.ensino_medio;
+        if (!m.M && !m.T && !m.N) return false;
+      }
+      return true;
+    });
+
+    // Agrupa por data
+    const porData = {};
+    for (const r of filtrados) {
+      const d = r.data_pdf || 'Data não identificada';
+      if (!porData[d]) porData[d] = [];
+      porData[d].push(r);
+    }
+
+    // Ordena datas mais recentes primeiro
+    const datasOrdenadas = Object.keys(porData).sort((a, b) => {
+      const parseData = s => {
+        const [d, m, y] = s.split('/');
+        return y ? new Date(y, m-1, d) : new Date(0);
+      };
+      return parseData(b) - parseData(a);
+    });
+
+    const main = document.getElementById('main');
+
+    if (filtrados.length === 0) {
+      main.innerHTML = `
+        <div class="empty">
+          <div class="empty-icon">🔍</div>
+          <h3>Nenhum resultado encontrado</h3>
+          <p>Tente ajustar os filtros acima.</p>
+        </div>`;
+      return;
+    }
+
+    main.innerHTML = datasOrdenadas.map((data, i) => {
+      const regs = porData[data];
+      return `
+        <div class="date-group" style="animation-delay: ${i * 60}ms">
+          <div class="date-header">
+            <span class="date-label">📅 ${data}</span>
+            <div class="date-line"></div>
+            <span class="date-count">${regs.length} registro${regs.length !== 1 ? 's' : ''}</span>
+          </div>
+          <div class="cards-grid">
+            ${regs.map(renderCard).join('')}
+          </div>
+        </div>`;
+    }).join('');
+  }
+
+  // ── Renderiza um card individual ────────────────────────────────
+  function renderCard(r) {
+    const f = r.ensino_fundamental;
+    const m = r.ensino_medio;
+
+    const temFund = f.M || f.T || f.N;
+    const temMedio = m.M || m.T || m.N;
+
+    const blocoTurnos = (titulo, dados) => {
+      if (!dados.M && !dados.T && !dados.N) return '';
+      return `
+        <div class="turno-block">
+          <div class="turno-titulo">${titulo}</div>
+          <div class="turno-aulas">
+            ${['M','T','N'].map(t => `
+              <div class="aula-item">
+                <span class="aula-turno">${t}</span>
+                <span class="aula-valor ${dados[t] ? 'tem-aula' : 'vazio'}">${dados[t] || '—'}</span>
+              </div>`).join('')}
+          </div>
+        </div>`;
+    };
+
+    return `
+      <div class="card">
+        <div class="card-disciplina">${r.disciplina || '—'}</div>
+        <div class="card-escola">${r.escola || '—'}</div>
+        <div class="card-municipio">${r.municipio || ''}</div>
+        <div class="card-turnos">
+          ${blocoTurnos('Ensino Fundamental', f)}
+          ${blocoTurnos('Ensino Médio', m)}
+        </div>
+        ${r.observacao ? `<div class="card-obs">⚠ ${r.observacao}</div>` : ''}
+      </div>`;
+  }
+
+  // ── Event listeners dos filtros ─────────────────────────────────
+  ['filtroDisc','filtroEscola','filtroMunicipio','filtroNivel'].forEach(id => {
+    document.getElementById(id).addEventListener('input', renderizar);
+  });
+
+  carregar();
+</script>
+</body>
+</html>
