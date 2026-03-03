@@ -2,7 +2,7 @@ name: Atualizar dados PSS
 
 on:
   schedule:
-    - cron: '0 9,15 * * *'
+    - cron: '0 9,17 * * *'
   workflow_dispatch:
 
 jobs:
