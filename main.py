@@ -121,12 +121,40 @@ for nome_arquivo in sorted(os.listdir(pasta_pdfs)):
     except Exception as e:
         print(f"  ERRO em {nome_arquivo}: {e}")
 
-# ─── Etapa 4: Salva o JSON final ─────────────────────────────────────────────
+# ─── Etapa 4: Deduplicação — mantém só o registro mais recente por escola+disciplina ──
+
+print("\nDeduplicando registros...")
+
+def parse_data(s):
+    try:
+        return datetime.strptime(s, "%d/%m/%Y")
+    except:
+        return datetime.min
+
+# Achata todos os registros com a data do PDF pai
+todos_flat = []
+for pdf in todos_registros:
+    for reg in pdf["distribuicao"]:
+        todos_flat.append({ **reg, "data_pdf": pdf["data"] })
+
+# Para cada chave escola+disciplina, mantém só o mais recente
+mais_recentes = {}
+for reg in todos_flat:
+    chave = (reg["escola"].strip().upper(), reg["disciplina"].strip().upper())
+    data_reg = parse_data(reg["data_pdf"])
+    if chave not in mais_recentes or data_reg > parse_data(mais_recentes[chave]["data_pdf"]):
+        mais_recentes[chave] = reg
+
+registros_finais = list(mais_recentes.values())
+print(f"  Antes: {len(todos_flat)} registros → Após deduplicação: {len(registros_finais)} registros")
+
+# ─── Etapa 5: Salva o JSON final ─────────────────────────────────────────────
 
 output = {
     "total_pdfs":        len(todos_registros),
-    "total_registros":   sum(r["total_registros"] for r in todos_registros),
+    "total_registros":   len(registros_finais),
     "pdfs":              todos_registros,
+    "distribuicao":      registros_finais,
 }
 
 with open("dados.json", "w", encoding="utf-8") as f:
@@ -134,4 +162,4 @@ with open("dados.json", "w", encoding="utf-8") as f:
 
 print(f"\nJSON salvo em dados.json")
 print(f"Total de PDFs processados   : {output['total_pdfs']}")
-print(f"Total de registros extraídos: {output['total_registros']}")
+print(f"Total de registros únicos   : {output['total_registros']}")

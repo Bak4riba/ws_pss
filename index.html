@@ -483,34 +483,25 @@
   let todosRegistros = [];
 
   // ── Carrega o JSON ──────────────────────────────────────────────
-async function carregar() {
-  try {
-    console.log('Iniciando carregamento...');
-    const res = await fetch('dados.json');
-    console.log('Status:', res.status);
-    const data = await res.json();
-    console.log('Dados recebidos:', data.total_registros, 'registros');
-    processar(data);
-  } catch (e) {
-    console.error('Erro:', e);
-    document.getElementById('main').innerHTML = `
-      <div class="empty">
-        <div class="empty-icon">⚠️</div>
-        <h3>Erro ao carregar dados</h3>
-        <p>${e.message}</p>
-      </div>`;
+  async function carregar() {
+    try {
+      const res = await fetch('dados.json');
+      const data = await res.json();
+      processar(data);
+    } catch (e) {
+      document.getElementById('main').innerHTML = `
+        <div class="empty">
+          <div class="empty-icon">⚠️</div>
+          <h3>Erro ao carregar dados</h3>
+          <p>Verifique se o arquivo dados.json está na mesma pasta.</p>
+        </div>`;
+    }
   }
-}
 
   // ── Processa os dados vindos do JSON ────────────────────────────
   function processar(data) {
-    // Achata todos os registros adicionando a data do PDF pai
-    todosRegistros = [];
-    for (const pdf of data.pdfs) {
-      for (const reg of pdf.distribuicao) {
-        todosRegistros.push({ ...reg, data_pdf: pdf.data });
-      }
-    }
+    // Usa os registros já deduplicados do JSON
+    todosRegistros = data.distribuicao || [];
 
     // Stats
     document.getElementById('statPdfs').textContent = data.total_pdfs;
