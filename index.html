@@ -593,7 +593,7 @@
       return `
         <div class="date-group" style="animation-delay: ${i * 60}ms">
           <div class="date-header">
-            <span class="date-label">📅 ${data}</span>
+            <span class="date-label">📅 Data da distribuição: ${data}</span>
             <div class="date-line"></div>
             <span class="date-count">${regs.length} registro${regs.length !== 1 ? 's' : ''}</span>
           </div>
@@ -632,7 +632,7 @@
         <div class="card-disciplina">${r.disciplina || '—'}</div>
         <div class="card-escola">${r.escola || '—'}</div>
         <div class="card-municipio">${r.municipio || ''}</div>
-        ${r.horario ? `<div class="card-horario">🕐 Distribuição: ${r.horario}</div>` : ''}
+        ${r.horario ? `<div class="card-horario">🕐 <b>Horario:</b> ${r.horario}</div>` : ''}
         <div class="card-turnos">
           ${blocoTurnos('Ensino Fundamental', f)}
           ${blocoTurnos('Ensino Médio', m)}
