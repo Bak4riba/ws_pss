@@ -33,7 +33,7 @@ dados = {
     "pasta": "Telêmaco Borba/Professor/Convocação e Distribuição/2026"
 }
 
-DIAS_FILTRO = 3
+DIAS_FILTRO = 2
 
 # ─── Helpers ────────────────────────────────────────────────────────────────
 
