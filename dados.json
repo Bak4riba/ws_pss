@@ -1,12 +1,12 @@
 {
   "total_pdfs": 5,
-  "total_registros": 22,
+  "total_registros": 26,
   "pdfs": [
     {
       "data": "13/02/2026",
       "horario": "15h",
       "arquivo": "pdfs\\borbacronograma distribuicao de aulas telboba_13_02_2666.pdfborba 13_02.pdf",
-      "total_registros": 6,
+      "total_registros": 7,
       "distribuicao": [
         {
           "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
@@ -103,6 +103,22 @@
             "N": ""
           },
           "observacao": ""
+        },
+        {
+          "disciplina": "PEDAGOGO",
+          "municipio": "",
+          "escola": "C. E. DR. LUIZ VIEIRA",
+          "ensino_fundamental": {
+            "M": "20",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
         }
       ]
     },
@@ -110,7 +126,7 @@
       "data": "05/03/2026",
       "horario": "16h20min",
       "arquivo": "pdfs\\cronograma distribuicao de aulastelboba _05_03_202666.pdftb 05_03.pdf",
-      "total_registros": 5,
+      "total_registros": 6,
       "distribuicao": [
         {
           "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
@@ -171,6 +187,22 @@
           },
           "ensino_medio": {
             "M": "2",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "QUÍMICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. PROFª MARIA AP. MILITÃO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "6",
             "T": "",
             "N": ""
           },
@@ -350,8 +382,56 @@
       "data": "04/03/2026",
       "horario": "16h",
       "arquivo": "pdfs\\telbobacronograma distribuicao de aulas _04_03_202666.pdftb 04_03.pdf",
-      "total_registros": 6,
+      "total_registros": 9,
       "distribuicao": [
+        {
+          "disciplina": "",
+          "municipio": "Correção disciplina",
+          "escola": "C.E. GREGÓRIO TEIXEIRA",
+          "ensino_fundamental": {
+            "M": "6",
+            "T": "6",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "",
+          "municipio": "Correção disciplina",
+          "escola": "CECM PROFª MARIA AP. MILITÃO",
+          "ensino_fundamental": {
+            "M": "6",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "",
+          "municipio": "Correção disciplina",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "* 2",
+            "T": "2",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
         {
           "disciplina": "EDUCAÇÃO FÍSICA",
           "municipio": "TELÊMACO BORBA",
@@ -745,6 +825,24 @@
       "horario": "15h"
     },
     {
+      "disciplina": "PEDAGOGO",
+      "municipio": "",
+      "escola": "C. E. DR. LUIZ VIEIRA",
+      "ensino_fundamental": {
+        "M": "20",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "13/02/2026",
+      "horario": "15h"
+    },
+    {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
       "municipio": "TELÊMACO BORBA",
       "escola": "CECM PROFª MARIA AP. MILITÃO",
@@ -791,6 +889,24 @@
       },
       "ensino_medio": {
         "M": "2",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "05/03/2026",
+      "horario": "16h20min"
+    },
+    {
+      "disciplina": "QUÍMICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. PROFª MARIA AP. MILITÃO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "6",
         "T": "",
         "N": ""
       },
@@ -907,6 +1023,60 @@
       "horario": "16h"
     },
     {
+      "disciplina": "",
+      "municipio": "Correção disciplina",
+      "escola": "C.E. GREGÓRIO TEIXEIRA",
+      "ensino_fundamental": {
+        "M": "6",
+        "T": "6",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "*Docência II",
+      "data_pdf": "04/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "",
+      "municipio": "Correção disciplina",
+      "escola": "CECM PROFª MARIA AP. MILITÃO",
+      "ensino_fundamental": {
+        "M": "6",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "*Docência II",
+      "data_pdf": "04/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "",
+      "municipio": "Correção disciplina",
+      "escola": "C. E. SÃO FRANCISCO",
+      "ensino_fundamental": {
+        "M": "* 2",
+        "T": "2",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "*Docência II",
+      "data_pdf": "04/03/2026",
+      "horario": "16h"
+    },
+    {
       "disciplina": "RECOMPOSIÇÃO LÍNGUA PORTUGUESA",
       "municipio": "TELÊMACO BORBA",
       "escola": "E. E. BELA VISTA",
@@ -989,24 +1159,6 @@
       },
       "ensino_medio": {
         "M": "2",
-        "T": "",
-        "N": ""
-      },
-      "observacao": "",
-      "data_pdf": "02/03/2026",
-      "horario": "15h"
-    },
-    {
-      "disciplina": "QUÍMICA",
-      "municipio": "TELÊMACO BORBA",
-      "escola": "C. E. PROFª MARIA AP. MILITÃO",
-      "ensino_fundamental": {
-        "M": "",
-        "T": "",
-        "N": ""
-      },
-      "ensino_medio": {
-        "M": "6",
         "T": "",
         "N": ""
       },
