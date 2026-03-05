@@ -107,6 +107,94 @@
       ]
     },
     {
+      "data": "05/03/2026",
+      "horario": "16h20min",
+      "arquivo": "pdfs\\cronograma distribuicao de aulastelboba _05_03_202666.pdftb 05_03.pdf",
+      "total_registros": 5,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C.E. GREGÓRIO TEIXEIRA",
+          "ensino_fundamental": {
+            "M": "6",
+            "T": "6",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM PROFª MARIA AP. MILITÃO",
+          "ensino_fundamental": {
+            "M": "6",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "* 2",
+            "T": "2",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "EDUCAÇÃO FÍSICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. C. M. Custódio Netto",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "2",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM Jardim Alegre",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "1",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
       "data": "04/03/2026",
       "horario": "16h",
       "arquivo": "pdfs\\cronogramacronograma distribuicao de aulas telboba_04_03_2026.pdftel borba04_03.pdf",
@@ -545,94 +633,6 @@
           "observacao": ""
         }
       ]
-    },
-    {
-      "data": "02/03/2026",
-      "horario": "11h",
-      "arquivo": "pdfs\\telborbacronograma distribuicao de aulas telboba_27_02_2026.pdfDistribuição de Aulas Telêmaco Borba - 02_03_2026.pdf",
-      "total_registros": 5,
-      "distribuicao": [
-        {
-          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
-          "municipio": "TELÊMACO BORBA",
-          "escola": "C.E. GREGÓRIO TEIXEIRA",
-          "ensino_fundamental": {
-            "M": "6",
-            "T": "6",
-            "N": ""
-          },
-          "ensino_medio": {
-            "M": "",
-            "T": "",
-            "N": ""
-          },
-          "observacao": "*Docência II"
-        },
-        {
-          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
-          "municipio": "TELÊMACO BORBA",
-          "escola": "CECM PROFª MARIA AP. MILITÃO",
-          "ensino_fundamental": {
-            "M": "6",
-            "T": "",
-            "N": ""
-          },
-          "ensino_medio": {
-            "M": "",
-            "T": "",
-            "N": ""
-          },
-          "observacao": "*Docência II"
-        },
-        {
-          "disciplina": "INGLÊS",
-          "municipio": "TELÊMACO BORBA",
-          "escola": "CECM PRESIDENTE VARGAS",
-          "ensino_fundamental": {
-            "M": "",
-            "T": "",
-            "N": ""
-          },
-          "ensino_medio": {
-            "M": "6",
-            "T": "",
-            "N": ""
-          },
-          "observacao": "subst."
-        },
-        {
-          "disciplina": "EDUCAÇÃO FÍSICA",
-          "municipio": "TELÊMACO BORBA",
-          "escola": "C. E. C. M. Custódio Netto",
-          "ensino_fundamental": {
-            "M": "",
-            "T": "",
-            "N": ""
-          },
-          "ensino_medio": {
-            "M": "2",
-            "T": "",
-            "N": ""
-          },
-          "observacao": ""
-        },
-        {
-          "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
-          "municipio": "TELÊMACO BORBA",
-          "escola": "CECM Jardim Alegre",
-          "ensino_fundamental": {
-            "M": "",
-            "T": "",
-            "N": ""
-          },
-          "ensino_medio": {
-            "M": "1",
-            "T": "",
-            "N": ""
-          },
-          "observacao": ""
-        }
-      ]
     }
   ],
   "distribuicao": [
@@ -687,8 +687,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "04/03/2026",
-      "horario": "16h"
+      "data_pdf": "05/03/2026",
+      "horario": "16h20min"
     },
     {
       "disciplina": "EDUCAÇÃO FÍSICA",
@@ -747,24 +747,6 @@
     {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
       "municipio": "TELÊMACO BORBA",
-      "escola": "E. E. BELA VISTA",
-      "ensino_fundamental": {
-        "M": "",
-        "T": "4",
-        "N": ""
-      },
-      "ensino_medio": {
-        "M": "",
-        "T": "",
-        "N": ""
-      },
-      "observacao": "subst",
-      "data_pdf": "04/03/2026",
-      "horario": "16h"
-    },
-    {
-      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
-      "municipio": "TELÊMACO BORBA",
       "escola": "CECM PROFª MARIA AP. MILITÃO",
       "ensino_fundamental": {
         "M": "6",
@@ -777,8 +759,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "04/03/2026",
-      "horario": "16h"
+      "data_pdf": "05/03/2026",
+      "horario": "16h20min"
     },
     {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
@@ -795,8 +777,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "04/03/2026",
-      "horario": "16h"
+      "data_pdf": "05/03/2026",
+      "horario": "16h20min"
     },
     {
       "disciplina": "EDUCAÇÃO FÍSICA",
@@ -813,6 +795,42 @@
         "N": ""
       },
       "observacao": "",
+      "data_pdf": "05/03/2026",
+      "horario": "16h20min"
+    },
+    {
+      "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CECM Jardim Alegre",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "1",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "05/03/2026",
+      "horario": "16h20min"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "E. E. BELA VISTA",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "4",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "subst",
       "data_pdf": "04/03/2026",
       "horario": "16h"
     },
@@ -1011,24 +1029,6 @@
         "N": ""
       },
       "observacao": "subst.",
-      "data_pdf": "02/03/2026",
-      "horario": "15h"
-    },
-    {
-      "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
-      "municipio": "TELÊMACO BORBA",
-      "escola": "CECM Jardim Alegre",
-      "ensino_fundamental": {
-        "M": "",
-        "T": "",
-        "N": ""
-      },
-      "ensino_medio": {
-        "M": "1",
-        "T": "",
-        "N": ""
-      },
-      "observacao": "",
       "data_pdf": "02/03/2026",
       "horario": "15h"
     }
