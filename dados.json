@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 4,
-  "total_registros": 21,
+  "total_pdfs": 5,
+  "total_registros": 22,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -379,6 +379,94 @@
       ]
     },
     {
+      "data": "09/03/2026",
+      "horario": "9h",
+      "arquivo": "pdfs\\cronogramadistribuicaodeaulastelboba _09_03_2026.pdftb 09_03_2026.pdf",
+      "total_registros": 5,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C.E. GREGÓRIO TEIXEIRA",
+          "ensino_fundamental": {
+            "M": "6",
+            "T": "6",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM PROFª MARIA AP. MILITÃO",
+          "ensino_fundamental": {
+            "M": "6",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "24",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM Jardim Alegre",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "1",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "INGLÊS",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "4",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
       "data": "04/03/2026",
       "horario": "16h",
       "arquivo": "pdfs\\telbobacronograma distribuicao de aulas _04_03_202666.pdftb 04_03.pdf",
@@ -583,8 +671,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "05/03/2026",
-      "horario": "16h20min"
+      "data_pdf": "09/03/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "EDUCAÇÃO FÍSICA",
@@ -673,16 +761,16 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "05/03/2026",
-      "horario": "16h20min"
+      "data_pdf": "09/03/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
       "municipio": "TELÊMACO BORBA",
       "escola": "C. E. SÃO FRANCISCO",
       "ensino_fundamental": {
-        "M": "* 2",
-        "T": "2",
+        "M": "",
+        "T": "24",
         "N": ""
       },
       "ensino_medio": {
@@ -691,8 +779,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "05/03/2026",
-      "horario": "16h20min"
+      "data_pdf": "09/03/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "EDUCAÇÃO FÍSICA",
@@ -745,8 +833,8 @@
         "N": ""
       },
       "observacao": "",
-      "data_pdf": "05/03/2026",
-      "horario": "16h20min"
+      "data_pdf": "09/03/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
@@ -837,6 +925,24 @@
       "observacao": "subst.",
       "data_pdf": "04/03/2026",
       "horario": "16h"
+    },
+    {
+      "disciplina": "INGLÊS",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. SÃO FRANCISCO",
+      "ensino_fundamental": {
+        "M": "4",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "09/03/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "",
