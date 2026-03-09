@@ -9,25 +9,65 @@ def limpar_texto(texto):
     return re.sub(r'-?\n\s*', '', texto).strip()
 
 
+TURNOS_CURTOS = {"M", "T", "N"}
+TURNOS_LONGOS = {"MANHÃ", "TARDE", "NOITE"}
+
+
 def eh_tabela_de_aulas(table):
     """Verifica se uma tabela é de distribuição de aulas."""
-    if not table or len(table) < 4:
+    if not table or len(table) < 3:
         return False
-    # Verifica nas primeiras 4 linhas — algumas tabelas têm linha extra vazia
-    for row in table[1:4]:
-        turnos = [c for c in row if c in ("M", "T", "N")]
-        if len(turnos) >= 3:
+    # Verifica nas primeiras 5 linhas — algumas tabelas têm linha extra vazia
+    for row in table[1:5]:
+        vals = [str(c).strip().upper() for c in row if c and str(c).strip()]
+        if len([v for v in vals if v in TURNOS_CURTOS]) >= 3:
+            return True
+        if len([v for v in vals if v in TURNOS_LONGOS]) >= 2:
             return True
     return False
 
 
 def linha_dos_turnos(table):
-    """Retorna o índice da linha que contém M, T, N."""
-    for i, row in enumerate(table[1:4], start=1):
-        turnos = [c for c in row if c in ("M", "T", "N")]
-        if len(turnos) >= 3:
+    """Retorna o índice da linha que contém os turnos (M/T/N ou MANHÃ/TARDE/NOITE)."""
+    for i, row in enumerate(table[1:5], start=1):
+        vals = [str(c).strip().upper() for c in row if c and str(c).strip()]
+        if len([v for v in vals if v in TURNOS_CURTOS]) >= 3:
+            return i
+        if len([v for v in vals if v in TURNOS_LONGOS]) >= 2:
             return i
     return 2  # fallback
+
+
+def normalizar_turno(val):
+    """Normaliza turnos longos para curtos."""
+    mapa = {"MANHÃ": "M", "TARDE": "T", "NOITE": "N"}
+    return mapa.get(str(val).strip().upper(), val)
+
+
+def normalizar_tabela(table):
+    """
+    Corrige tabelas onde o pdfplumber fundiu 'Ensino Fundamental\nM T N' numa célula.
+    Separa o M/T/N para a linha correta.
+    """
+    table = [list(row) for row in table]  # copia mutável
+
+    for i, row in enumerate(table):
+        for j, cell in enumerate(row):
+            if not cell:
+                continue
+            # Detecta célula com nível + turnos embutidos ex: "Ensino Fundamental\nM T N"
+            padrao = r'(Ensino\s+\w+)\s*\n\s*(M\s+T\s+N)'
+            match = re.search(padrao, str(cell), re.IGNORECASE)
+            if match:
+                # Limpa a célula deixando só o nível
+                table[i][j] = match.group(1)
+                # Garante que a próxima linha tem M na coluna correta
+                if i + 1 < len(table):
+                    proxima = table[i + 1]
+                    # Se a célula na mesma coluna está vazia, insere M
+                    if j < len(proxima) and not proxima[j]:
+                        proxima[j] = "M"
+    return table
 
 
 def limpar_aulas(valor):
@@ -73,12 +113,16 @@ def extrair_aulas_da_tabela(table):
     3. 1 disciplina, só Médio: 2 blocos com mesmo nome, ambos nível Médio
     """
     registros = []
+    table = normalizar_tabela(table)
     linha0 = table[0]
     linha1 = table[1]
     idx_turnos = linha_dos_turnos(table)
     linha2 = table[idx_turnos]
 
     municipio = limpar_texto(linha0[0]) if linha0[0] else ""
+
+    # Normaliza turnos longos para curtos
+    linha2 = [normalizar_turno(c) if c else c for c in linha2]
 
     # Monta lista de blocos na ordem em que aparecem
     posicoes_M = [i for i, v in enumerate(linha2) if v == "M"]
@@ -201,18 +245,76 @@ def extrair_horario(pdf_path):
     return "Horário não encontrado"
 
 
+def eh_cabecalho_sem_dados(table):
+    """
+    Verifica se a tabela é só um cabeçalho sem linhas de escola.
+    Ex: tabela com município + disciplina + M/T/N mas sem nenhuma linha de dados.
+    """
+    if not eh_tabela_de_aulas(table):
+        return False
+    idx = linha_dos_turnos(table)
+    linhas_dados = [r for r in table[idx+1:] if r and r[0] and limpar_texto(r[0])]
+    return len(linhas_dados) == 0
+
+
+def eh_dados_orfaos(table):
+    """
+    Verifica se a tabela é só dados sem cabeçalho (continuação de tabela quebrada).
+    Critério: primeira célula não é município nem ESTABELECIMENTO,
+    e não tem linha de M/T/N.
+    """
+    if not table or len(table) == 0:
+        return False
+    if eh_tabela_de_aulas(table):
+        return False
+    primeira = limpar_texto(table[0][0] or "").upper()
+    # Se começa com nome de escola (não é cabeçalho)
+    municipios = ("BORBA", "ORTIGUEIRA", "RESERVA", "VENTANIA", "TIBAGI")
+    nao_e_cabecalho = (
+        primeira not in ("", "ESTABELECIMENTO") and
+        not any(m in primeira for m in municipios)
+    )
+    return nao_e_cabecalho
+
+
+def juntar_tabela(cabecalho, dados):
+    """Junta um cabeçalho com linhas de dados órfãos."""
+    idx = linha_dos_turnos(cabecalho)
+    return cabecalho[:idx+1] + dados
+
+
 def processar_pdf(pdf_path):
     """Processa um PDF completo e retorna os dados estruturados."""
     data = extrair_data(pdf_path)
     horario = extrair_horario(pdf_path)
     registros = []
 
+    # Coleta todas as tabelas do PDF em sequência
+    todas_tabelas = []
     with pdfplumber.open(pdf_path) as pdf:
         for page in pdf.pages:
-            tables = page.extract_tables()
-            for table in tables:
-                if eh_tabela_de_aulas(table):
-                    registros.extend(extrair_aulas_da_tabela(table))
+            todas_tabelas.extend(page.extract_tables())
+
+    # Processa tabelas tentando juntar cabeçalhos com dados órfãos
+    ultimo_cabecalho = None
+    for table in todas_tabelas:
+        if eh_cabecalho_sem_dados(table):
+            # Guarda o cabeçalho para juntar com a próxima tabela de dados
+            ultimo_cabecalho = table
+            continue
+
+        if eh_dados_orfaos(table) and ultimo_cabecalho is not None:
+            # Junta o cabeçalho guardado com esses dados
+            table = juntar_tabela(ultimo_cabecalho, table)
+            ultimo_cabecalho = None
+
+        if eh_tabela_de_aulas(table):
+            ultimo_cabecalho = None
+            registros.extend(extrair_aulas_da_tabela(table))
+        elif ultimo_cabecalho is None:
+            # Tabela sem cabeçalho pendente — tenta processar mesmo assim
+            # (caso de Recomposição LP sem linha M/T/N)
+            pass
 
     return {
         "data":            data,
