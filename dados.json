@@ -1,5 +1,5 @@
 {
-  "total_pdfs": 4,
+  "total_pdfs": 5,
   "total_registros": 22,
   "pdfs": [
     {
@@ -115,6 +115,78 @@
           },
           "ensino_medio": {
             "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
+      "data": "12/03/2026",
+      "horario": "15h30min",
+      "arquivo": "pdfs\\correçãocronogramadistribuicaodeaulastelboba _12_03_20268.pdfTB corrreção 12_03.pdf",
+      "total_registros": 4,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "BIOLOGIA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. JARDIM ALEGRE",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "8",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "BIOLOGIA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. WOLFF KLABIN",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "2",
+            "T": "",
+            "N": "5"
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM Jardim Alegre",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "1",
             "T": "",
             "N": ""
           },
@@ -597,24 +669,6 @@
     {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
       "municipio": "TELÊMACO BORBA",
-      "escola": "CECM PROFª MARIA AP. MILITÃO",
-      "ensino_fundamental": {
-        "M": "6",
-        "T": "",
-        "N": ""
-      },
-      "ensino_medio": {
-        "M": "",
-        "T": "",
-        "N": ""
-      },
-      "observacao": "*Docência II",
-      "data_pdf": "09/03/2026",
-      "horario": "9h"
-    },
-    {
-      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
-      "municipio": "TELÊMACO BORBA",
       "escola": "C. E. SÃO FRANCISCO",
       "ensino_fundamental": {
         "M": "",
@@ -627,6 +681,42 @@
         "N": ""
       },
       "observacao": "*Docência II",
+      "data_pdf": "12/03/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "BIOLOGIA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. JARDIM ALEGRE",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "8",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "12/03/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "BIOLOGIA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. WOLFF KLABIN",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "2",
+        "T": "",
+        "N": "5"
+      },
+      "observacao": "",
       "data_pdf": "12/03/2026",
       "horario": "15h30min"
     },
@@ -647,6 +737,24 @@
       "observacao": "",
       "data_pdf": "12/03/2026",
       "horario": "15h30min"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CECM PROFª MARIA AP. MILITÃO",
+      "ensino_fundamental": {
+        "M": "6",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "*Docência II",
+      "data_pdf": "09/03/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "LÍNGUA PORTUGUESA",
@@ -827,42 +935,6 @@
       "observacao": "subst.",
       "data_pdf": "10/03/2026",
       "horario": "11h"
-    },
-    {
-      "disciplina": "BIOLOGIA",
-      "municipio": "TELÊMACO BORBA",
-      "escola": "C. E. JARDIM ALEGRE",
-      "ensino_fundamental": {
-        "M": "",
-        "T": "",
-        "N": ""
-      },
-      "ensino_medio": {
-        "M": "8",
-        "T": "",
-        "N": ""
-      },
-      "observacao": "",
-      "data_pdf": "12/03/2026",
-      "horario": "15h30min"
-    },
-    {
-      "disciplina": "BIOLOGIA",
-      "municipio": "TELÊMACO BORBA",
-      "escola": "C. E. WOLFF KLABIN",
-      "ensino_fundamental": {
-        "M": "",
-        "T": "",
-        "N": ""
-      },
-      "ensino_medio": {
-        "M": "2",
-        "T": "",
-        "N": "5"
-      },
-      "observacao": "",
-      "data_pdf": "12/03/2026",
-      "horario": "15h30min"
     }
   ]
 }
