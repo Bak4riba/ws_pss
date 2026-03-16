@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 6,
-  "total_registros": 23,
+  "total_pdfs": 7,
+  "total_registros": 24,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -577,6 +577,46 @@
           "observacao": ""
         }
       ]
+    },
+    {
+      "data": "17/03/2026",
+      "horario": "9h30min",
+      "arquivo": "pdfs\\cronogramadistribuicaodeaulastelboba _17_03_2026.pdfTB 17_03.pdf",
+      "total_registros": 2,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "ARTE",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. PRESIDENTE VARGAS",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "14",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "6",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "subst."
+        }
+      ]
     }
   ],
   "distribuicao": [
@@ -721,8 +761,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "16/03/2026",
-      "horario": "9h"
+      "data_pdf": "17/03/2026",
+      "horario": "9h30min"
     },
     {
       "disciplina": "BIOLOGIA",
@@ -993,6 +1033,24 @@
       "observacao": "",
       "data_pdf": "16/03/2026",
       "horario": "9h"
+    },
+    {
+      "disciplina": "ARTE",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. PRESIDENTE VARGAS",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "14",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "6",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "subst.",
+      "data_pdf": "17/03/2026",
+      "horario": "9h30min"
     }
   ]
 }
