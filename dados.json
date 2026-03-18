@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 8,
-  "total_registros": 26,
+  "total_pdfs": 9,
+  "total_registros": 33,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -673,6 +673,158 @@
           "observacao": "subst."
         }
       ]
+    },
+    {
+      "data": "19/03/2026",
+      "horario": "16h",
+      "arquivo": "pdfs\\tbcronogramadistribuicaodeaulastelboba _19_03_20266.pdfTB 19_03.pdf",
+      "total_registros": 9,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "CIÊNCIAS",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CEEBJA",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "BIOLOGIA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CEEBJA",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": "6"
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "CIÊNCIAS",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. Dr. MARCELINO NOGUEIRA",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "9",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "BIOLOGIA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. Dr. MARCELINO NOGUEIRA",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "CIÊNCIAS",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "P Exp."
+        },
+        {
+          "disciplina": "BIOLOGIA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "EDUCAÇÃO FÍSICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. PROFª MARIA AP. MILITÃO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "4",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "EDUCAÇÃO FÍSICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CE CM PRESIDENTE VARGAS",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "4",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
     }
   ],
   "distribuicao": [
@@ -740,13 +892,13 @@
         "N": ""
       },
       "ensino_medio": {
-        "M": "2M e 1T",
+        "M": "4",
         "T": "",
         "N": ""
       },
       "observacao": "",
-      "data_pdf": "13/02/2026",
-      "horario": "15h"
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
     },
     {
       "disciplina": "EDUCAÇÃO FÍSICA",
@@ -817,8 +969,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "18/03/2026",
-      "horario": "10h"
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
     },
     {
       "disciplina": "BIOLOGIA",
@@ -1143,6 +1295,132 @@
       "observacao": "subst.",
       "data_pdf": "18/03/2026",
       "horario": "10h"
+    },
+    {
+      "disciplina": "CIÊNCIAS",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CEEBJA",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "BIOLOGIA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CEEBJA",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": "6"
+      },
+      "observacao": "",
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "CIÊNCIAS",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. Dr. MARCELINO NOGUEIRA",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "9",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "BIOLOGIA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. Dr. MARCELINO NOGUEIRA",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "CIÊNCIAS",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. SÃO FRANCISCO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "4",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "P Exp.",
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "BIOLOGIA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. SÃO FRANCISCO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "EDUCAÇÃO FÍSICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. PROFª MARIA AP. MILITÃO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "4",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "19/03/2026",
+      "horario": "16h"
     }
   ]
 }
