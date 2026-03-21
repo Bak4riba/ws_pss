@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 10,
-  "total_registros": 36,
+  "total_pdfs": 11,
+  "total_registros": 38,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -897,6 +897,78 @@
           "observacao": ""
         }
       ]
+    },
+    {
+      "data": "23/03/2026",
+      "horario": "9h",
+      "arquivo": "pdfs\\tbcronogramadistribuicaodeaulastelboba _23_03_20266.pdfTB 23_03.pdf",
+      "total_registros": 4,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "FÍSICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. PROF. CUSTÓDIO NETTO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "6",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "LÍNGUA PORTUGUESA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "E. E. NOSSA Srª. DE FÁTIMA",
+          "ensino_fundamental": {
+            "M": "6",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "subst."
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO LÍNGUA PORTUGUESA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "E. E. NOSSA Srª. DE FÁTIMA",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "2",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "subst."
+        }
+      ]
     }
   ],
   "distribuicao": [
@@ -1032,7 +1104,7 @@
       "escola": "C. E. SÃO FRANCISCO",
       "ensino_fundamental": {
         "M": "",
-        "T": "4(2ª,3ª)",
+        "T": "4",
         "N": ""
       },
       "ensino_medio": {
@@ -1041,8 +1113,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "20/03/2026",
-      "horario": "16h"
+      "data_pdf": "23/03/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "BIOLOGIA",
@@ -1248,7 +1320,7 @@
       "escola": "E. E. NOSSA Srª. DE FÁTIMA",
       "ensino_fundamental": {
         "M": "6",
-        "T": "10",
+        "T": "",
         "N": ""
       },
       "ensino_medio": {
@@ -1257,7 +1329,7 @@
         "N": ""
       },
       "observacao": "subst.",
-      "data_pdf": "09/03/2026",
+      "data_pdf": "23/03/2026",
       "horario": "9h"
     },
     {
@@ -1547,6 +1619,42 @@
       "observacao": "",
       "data_pdf": "19/03/2026",
       "horario": "16h"
+    },
+    {
+      "disciplina": "FÍSICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. PROF. CUSTÓDIO NETTO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "6",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "23/03/2026",
+      "horario": "9h"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃO LÍNGUA PORTUGUESA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "E. E. NOSSA Srª. DE FÁTIMA",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "2",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "subst.",
+      "data_pdf": "23/03/2026",
+      "horario": "9h"
     }
   ]
 }
