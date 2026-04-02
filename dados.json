@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 4,
-  "total_registros": 13,
+  "total_pdfs": 6,
+  "total_registros": 20,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -115,6 +115,166 @@
           },
           "ensino_medio": {
             "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
+      "data": "01/04/2026",
+      "horario": "15h",
+      "arquivo": "pdfs\\cronogramadistribuicaodeaulasOrtigueira_01_04_2026.pdfOrt 01_04.pdf",
+      "total_registros": 5,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "00950 - MONJOLINHO, C E C-EF M",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4* + 4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "00372 - PLINIO FRANCO F DA COSTA, C E C-EF M",
+          "ensino_fundamental": {
+            "M": "2",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "PROJETO DE VIDA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "00313 - ALTAIR MONGRUEL, C E-EF M",
+          "ensino_fundamental": {
+            "M": "1",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "subst."
+        },
+        {
+          "disciplina": "EDUCAÇÃO FÍSICA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "01719 - CENTRO EST EDUC PROF FL AG DEORTIGUEIRA",
+          "ensino_fundamental": {
+            "M": "18",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "subst."
+        },
+        {
+          "disciplina": "ED DIG COMP PROG E IA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "00313 - ALTAIR MONGRUEL, C E-EF M",
+          "ensino_fundamental": {
+            "M": "1",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "subst."
+        }
+      ]
+    },
+    {
+      "data": "06/04/2026",
+      "horario": "9h",
+      "arquivo": "pdfs\\cronogramadistribuicaodeaulastelboba 06_04_20266.pdfTB 006_04.pdf",
+      "total_registros": 4,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. PRESIDENTE VARGAS",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "10",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4(2ª,3ª)",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "EDUCAÇÃO FÍSICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CE CM PRESIDENTE VARGAS",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "1M+1T",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. PROFª MARIA AP. MILITÃO",
+          "ensino_fundamental": {
+            "M": "2",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "3",
             "T": "",
             "N": ""
           },
@@ -356,13 +516,13 @@
         "N": ""
       },
       "ensino_medio": {
-        "M": "2M e 1T",
+        "M": "1M+1T",
         "T": "",
         "N": ""
       },
       "observacao": "",
-      "data_pdf": "13/02/2026",
-      "horario": "15h"
+      "data_pdf": "06/04/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "EDUCAÇÃO FÍSICA",
@@ -420,11 +580,101 @@
     },
     {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
-      "municipio": "TELÊMACO BORBA",
-      "escola": "C. E. SÃO FRANCISCO",
+      "municipio": "ORTIGUEIRA",
+      "escola": "00950 - MONJOLINHO, C E C-EF M",
       "ensino_fundamental": {
         "M": "",
-        "T": "4",
+        "T": "4* + 4",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "01/04/2026",
+      "horario": "15h"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "00372 - PLINIO FRANCO F DA COSTA, C E C-EF M",
+      "ensino_fundamental": {
+        "M": "2",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "01/04/2026",
+      "horario": "15h"
+    },
+    {
+      "disciplina": "PROJETO DE VIDA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "00313 - ALTAIR MONGRUEL, C E-EF M",
+      "ensino_fundamental": {
+        "M": "1",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "subst.",
+      "data_pdf": "01/04/2026",
+      "horario": "15h"
+    },
+    {
+      "disciplina": "EDUCAÇÃO FÍSICA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "01719 - CENTRO EST EDUC PROF FL AG DEORTIGUEIRA",
+      "ensino_fundamental": {
+        "M": "18",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "subst.",
+      "data_pdf": "01/04/2026",
+      "horario": "15h"
+    },
+    {
+      "disciplina": "ED DIG COMP PROG E IA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "00313 - ALTAIR MONGRUEL, C E-EF M",
+      "ensino_fundamental": {
+        "M": "1",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "subst.",
+      "data_pdf": "01/04/2026",
+      "horario": "15h"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. PRESIDENTE VARGAS",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "10",
         "N": ""
       },
       "ensino_medio": {
@@ -433,8 +683,44 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "24/03/2026",
-      "horario": "13h30min"
+      "data_pdf": "06/04/2026",
+      "horario": "9h"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. SÃO FRANCISCO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "4(2ª,3ª)",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "*Docência II",
+      "data_pdf": "06/04/2026",
+      "horario": "9h"
+    },
+    {
+      "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "C. E. PROFª MARIA AP. MILITÃO",
+      "ensino_fundamental": {
+        "M": "2",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "3",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "06/04/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "EDUCAÇÃO ESPECIAL",
