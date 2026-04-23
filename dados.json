@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 6,
-  "total_registros": 20,
+  "total_pdfs": 7,
+  "total_registros": 21,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -117,6 +117,30 @@
             "M": "",
             "T": "",
             "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
+      "data": "23/04/2026",
+      "horario": "16h",
+      "arquivo": "pdfs\\cronogramadistribuicao de aulassapopema_23_04_2026.pdfSapopema 23_04.pdf",
+      "total_registros": 1,
+      "distribuicao": [
+        {
+          "disciplina": "ARTE",
+          "municipio": "SAPOPEMA",
+          "escola": "00254 - EFIGENIA DE PAULA LUZ, C E C - E F M",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": "4"
           },
           "observacao": ""
         }
@@ -577,6 +601,24 @@
       "observacao": "",
       "data_pdf": "13/02/2026",
       "horario": "15h"
+    },
+    {
+      "disciplina": "ARTE",
+      "municipio": "SAPOPEMA",
+      "escola": "00254 - EFIGENIA DE PAULA LUZ, C E C - E F M",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": "4"
+      },
+      "observacao": "",
+      "data_pdf": "23/04/2026",
+      "horario": "16h"
     },
     {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
