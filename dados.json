@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 7,
-  "total_registros": 21,
+  "total_pdfs": 10,
+  "total_registros": 41,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -111,6 +111,286 @@
           "ensino_fundamental": {
             "M": "20",
             "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
+      "data": "24/04/2026",
+      "horario": "15h30min",
+      "arquivo": "pdfs\\cronograma distribuicao de aulas imbau_24_04_2026.pdfImbaú 24_04.pdf",
+      "total_registros": 17,
+      "distribuicao": [
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "C.E. MARIA DAS GRAÇAS C. DI MARIO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "08",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Etapa: 202602 - GRUPO 02 - PROFESSOR QUE IRÁ ATUAR COMO MEDIADOR - EDITAL 15/2026 - GS/SEED",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Núcleo: TELEMACO BORBA",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Município: IMBAU",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Data: 23/04/2026 14:00",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Local para Apresentação: Colégio Estadual Maria das Graças Di Mário",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Telefone de Contato: 42 3271 3716",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Convocação para: Comprovação de Títulos",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "Função",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "Nome",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "CHIRLENE ALMEIDA SILVA",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "BRENDA BORGES PINHEIRO",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "ANA PAULA BUENO DE SOUZA",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "EDIANE SANTOS DE SOUZA",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "ROBERSON DA SILVA DE CARVALHO",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "ANA CLAUDIA GONCALVES MARTINS",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "JOAO HENRIQUE GODOIS GURSKI",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+          "municipio": "IMBAÚ",
+          "escola": "GN - Administração (PN)",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "CHIRLENE ALMEIDA SILVA",
             "N": ""
           },
           "ensino_medio": {
@@ -235,6 +515,94 @@
       ]
     },
     {
+      "data": "23/04/2026",
+      "horario": "16h",
+      "arquivo": "pdfs\\cronogramadistribuicaodeaulasOrtigueira_24_04_2026.pdfOrt. 24_04.pdf",
+      "total_registros": 5,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃOMATEMÁTICA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "00950 - MONJOLINHO, C E C-EF M",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4* + 4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "* Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃOMATEMÁTICA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "00372 - PLINIO FRANCO F DA COSTA, C E C-EF M",
+          "ensino_fundamental": {
+            "M": "2",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "* Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃOMATEMÁTICA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "00720 - VISTA ALEGRE, C E /CAMINHOS DOSABER",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "2",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "FÍSICA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "01263 - BENTO M ROCHA NETTO, C E C DR-EF M",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": "4"
+          },
+          "observacao": "subst."
+        },
+        {
+          "disciplina": "LÍNGUA PORTUGUESA",
+          "municipio": "ORTIGUEIRA",
+          "escola": "01263 - BENTO M ROCHA NETTO, C E C DR-EFM",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": "4"
+          },
+          "observacao": "subst."
+        }
+      ]
+    },
+    {
       "data": "06/04/2026",
       "horario": "9h",
       "arquivo": "pdfs\\cronogramadistribuicaodeaulastelboba 06_04_20266.pdfTB 006_04.pdf",
@@ -351,6 +719,94 @@
           "ensino_fundamental": {
             "M": "",
             "T": "20",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
+      "data": "24/04/2026",
+      "horario": "15h30min",
+      "arquivo": "pdfs\\cronogramadistribuicaodeaulastelboba_24_04_20266.pdfTBorba 24_04.pdf",
+      "total_registros": 5,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM PRESIDENTE VARGAS",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "08",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4(2ª,3ª)",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "ESPANHOL",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM PROF. CUSTÓDIO NETTO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "2",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "EDUCAÇÃO FÍSICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM SÃO PEDRO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        },
+        {
+          "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM SÃO PEDRO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "6",
             "N": ""
           },
           "ensino_medio": {
@@ -603,6 +1059,204 @@
       "horario": "15h"
     },
     {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "C.E. MARIA DAS GRAÇAS C. DI MARIO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "08",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Etapa: 202602 - GRUPO 02 - PROFESSOR QUE IRÁ ATUAR COMO MEDIADOR - EDITAL 15/2026 - GS/SEED",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Núcleo: TELEMACO BORBA",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Município: IMBAU",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Data: 23/04/2026 14:00",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Local para Apresentação: Colégio Estadual Maria das Graças Di Mário",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Telefone de Contato: 42 3271 3716",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Convocação para: Comprovação de Títulos",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "Função",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "Nome",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "GN - Administração",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "CHIRLENE ALMEIDA SILVA",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "DESENVOLVIMENTO DE SISTEMAS",
+      "municipio": "IMBAÚ",
+      "escola": "GN - Administração (PN)",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "CHIRLENE ALMEIDA SILVA",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
       "disciplina": "ARTE",
       "municipio": "SAPOPEMA",
       "escola": "00254 - EFIGENIA DE PAULA LUZ, C E C - E F M",
@@ -711,6 +1365,96 @@
       "horario": "15h"
     },
     {
+      "disciplina": "RECOMPOSIÇÃOMATEMÁTICA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "00950 - MONJOLINHO, C E C-EF M",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "4* + 4",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "* Docência II",
+      "data_pdf": "23/04/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃOMATEMÁTICA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "00372 - PLINIO FRANCO F DA COSTA, C E C-EF M",
+      "ensino_fundamental": {
+        "M": "2",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "* Docência II",
+      "data_pdf": "23/04/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃOMATEMÁTICA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "00720 - VISTA ALEGRE, C E /CAMINHOS DOSABER",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "2",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "23/04/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "FÍSICA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "01263 - BENTO M ROCHA NETTO, C E C DR-EF M",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": "4"
+      },
+      "observacao": "subst.",
+      "data_pdf": "23/04/2026",
+      "horario": "16h"
+    },
+    {
+      "disciplina": "LÍNGUA PORTUGUESA",
+      "municipio": "ORTIGUEIRA",
+      "escola": "01263 - BENTO M ROCHA NETTO, C E C DR-EFM",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": "4"
+      },
+      "observacao": "subst.",
+      "data_pdf": "23/04/2026",
+      "horario": "16h"
+    },
+    {
       "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
       "municipio": "TELÊMACO BORBA",
       "escola": "C. E. PRESIDENTE VARGAS",
@@ -743,8 +1487,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "06/04/2026",
-      "horario": "9h"
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
     },
     {
       "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
@@ -799,6 +1543,78 @@
       "observacao": "",
       "data_pdf": "24/03/2026",
       "horario": "13h30min"
+    },
+    {
+      "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CECM PRESIDENTE VARGAS",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "08",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "*Docência II",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "ESPANHOL",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CECM PROF. CUSTÓDIO NETTO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "2",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "EDUCAÇÃO FÍSICA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CECM SÃO PEDRO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "4",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
+    },
+    {
+      "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CECM SÃO PEDRO",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "6",
+        "N": ""
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "24/04/2026",
+      "horario": "15h30min"
     },
     {
       "disciplina": "FÍSICA",
