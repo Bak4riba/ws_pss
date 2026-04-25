@@ -1,6 +1,6 @@
 {
-  "total_pdfs": 10,
-  "total_registros": 41,
+  "total_pdfs": 11,
+  "total_registros": 42,
   "pdfs": [
     {
       "data": "13/02/2026",
@@ -819,6 +819,62 @@
       ]
     },
     {
+      "data": "27/04/2026",
+      "horario": "9h",
+      "arquivo": "pdfs\\cronogramadistribuicaodeaulastelboba_27_04_20266.pdfTel B 27_04.pdf",
+      "total_registros": 3,
+      "distribuicao": [
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CECM PRESIDENTE VARGAS",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "08",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "RECOMPOSIÇÃO MATEMÁTICA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "C. E. SÃO FRANCISCO",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "4(2ª,3ª)",
+            "N": ""
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": "*Docência II"
+        },
+        {
+          "disciplina": "FARMÁCIA",
+          "municipio": "TELÊMACO BORBA",
+          "escola": "CE SÃO FRANCISCO DE ASSIS",
+          "ensino_fundamental": {
+            "M": "",
+            "T": "",
+            "N": "8"
+          },
+          "ensino_medio": {
+            "M": "",
+            "T": "",
+            "N": ""
+          },
+          "observacao": ""
+        }
+      ]
+    },
+    {
       "data": "23/03/2026",
       "horario": "9h",
       "arquivo": "pdfs\\tbcronogramadistribuicaodeaulastelboba _23_03_20266.pdfTB 23_03.pdf",
@@ -1487,8 +1543,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "24/04/2026",
-      "horario": "15h30min"
+      "data_pdf": "27/04/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "EDUCAÇÃO DIGITAL E COMPUTAÇAO: PROGRAMAÇÃO E IA",
@@ -1559,8 +1615,8 @@
         "N": ""
       },
       "observacao": "*Docência II",
-      "data_pdf": "24/04/2026",
-      "horario": "15h30min"
+      "data_pdf": "27/04/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "ESPANHOL",
@@ -1615,6 +1671,24 @@
       "observacao": "",
       "data_pdf": "24/04/2026",
       "horario": "15h30min"
+    },
+    {
+      "disciplina": "FARMÁCIA",
+      "municipio": "TELÊMACO BORBA",
+      "escola": "CE SÃO FRANCISCO DE ASSIS",
+      "ensino_fundamental": {
+        "M": "",
+        "T": "",
+        "N": "8"
+      },
+      "ensino_medio": {
+        "M": "",
+        "T": "",
+        "N": ""
+      },
+      "observacao": "",
+      "data_pdf": "27/04/2026",
+      "horario": "9h"
     },
     {
       "disciplina": "FÍSICA",
